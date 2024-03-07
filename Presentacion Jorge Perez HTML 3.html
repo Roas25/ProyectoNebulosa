@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Jorge Pérez</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            .primo{
+            display: inline;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            background-color: bisque;
+            width: fit-content;
+        }
+        li a{
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #555;
+            color: white
+        }
+
+            body {
+                background-image: url("https://camo.githubusercontent.com/596bfe4f2cd01180717a12afe3e44250dd42f2d16b8b44d1f5e45d1fa793bd11/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3530393834393735343538333330323135342f3831323934323031313430303834373339312f656d6f6a695f7261696e2e676966");
+                font-family: 'Roboto', sans-serif;
+                cursor: grab;
+            }
+            
+            table, th, td {
+                border: 1px solid grey;
+                border-collapse: collapse;
+                
+            }
+
+            th, td {
+                background-color: #dadada;
+                padding: 10px;
+            }
+
+            th {
+                background-color: #5853e3;
+                font-family: "Rock Salt", cursive;
+            }
+
+            .cabecera {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                color: blue;
+                background-color: white;
+                margin: 10px 300px 50px 300px;
+                border: 5px dotted darkorange;
+            }
+
+            .imagenes {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                border: 5px solid red;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-left: 100px;
+                margin-right: 100px;
+                background-color: rgb(199, 199, 199);
+            }
+            
+            .imagenes > img {
+                width: 300px;
+                border: 5px solid green;
+                border-radius: 10px;
+                margin: 10px;
+            }
+
+            .data {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                cursor: copy;
+            }
+            .fondocaceres {
+                background-image: url("https://www.spain.info/.content/imagenes/cabeceras-grandes/extremadura/caceres-s114696064.jpg");
+                background-size: cover;
+       
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="primo"> <ul>
+            <li><a href="formulario1.html"> formulario</a></li>
+            <li><a href="index.html"> indice</a></li>
+            <li><a href="pagina2.html"> Mis jugadas LoL</a></li>
+        </ul></div>
+        <div class="cabecera">
+            <h1>Jorge Pérez Pulido</h1>
+            <h2>Mis Gustos y preferencias</h2>
+        </div>
+
+        <div class="imagenes">
+            <img id="img1" onclick="playAudio('audio1')" onmouseleave="pauseAudio('audio1')" src="https://www.diariodesevilla.es/2021/08/05/vivirensevilla/consumo-cerveza-caracter-social_1598850244_142199195_1200x675.jpg" />
+            <img id="img2" onclick="playAudio('audio2')" onmouseleave="pauseAudio('audio2')" src="https://esports.eldesmarque.com/wp-content/uploads/2019/09/LoL2.jpg" />
+            <img id="img3" onclick="playAudio('audio3')" onmouseleave="pauseAudio('audio3')" src="https://w0.peakpx.com/wallpaper/688/997/HD-wallpaper-nirvana-smiley-1990s-grunge-kurt-cobain-logo-music.jpg" />
+        </div>
+
+        <div class="data">
+            <table>
+                <tr>
+                    <th>Musica</th>
+                    <th>Hobby</th>
+                    <th>Prodecencia</th>
+                    <th>Estudios</th>
+                    <th>Comida</th>
+                    <th>Peliculas</th>
+                    <th>Deportes</th>
+                    <th>Videojuegos Fav</th>
+                    <th>Grupos de Musica</th>
+                </tr>
+                <tr>
+                    <td>Grunch</td>
+                    <td>Videojuegos</td>
+                    <td>Caceres</td>
+                    <td>Maestro Primaria Inglés</td>
+                    <td>Sushi</td>
+                    <td>El señor de los anillos</td>
+                    <td>Gimnasio</td>
+                    <td>League of legends</td>
+                    <td>Nirvana</td>
+                </tr>
+                <tr>
+                    <td>Metal</td>
+                    <td>Warhammer</td>
+                    <td class="fondocaceres"></td>
+                    <td>B2 Cambridge</td>
+                    <td>Americana</td>
+                    <td>Matrix</td>
+                    <td>Calistenia</td>
+                    <td>Ratchet and Clank 1 2 3</td>
+                    <td>Guns and Roses</td>
+                </tr>
+                <tr>
+                    <td>Techno</td>
+                    <td>Bares</td>
+                    <td></td>
+                    <td>Curso Big Data</td>
+                    <td>Tradicional</td>
+                    <td>Toy Story</td>
+                    <td>MMA</td>
+                    <td>Final Fantasy X</td>
+                    <td>Sum 41</td>
+                </tr>
+            </table>
+        </div>
+
+        <audio id="audio1" src="https://voicebot.su/uploads/sounds/01/00653/653.mp3"></audio>
+        <audio id="audio2" src="https://vgmsite.com/soundtracks/league-of-legends-music-of-season-1-original-game-soundtrack/yzvhgbawrl/05%20-%20Classic%20Summoner's%20Rift%20Champion%20Select%20-%20Draft%20Pick%20(From%20League%20of%20Legends_%20Season%201).mp3"></audio>
+        <audio id="audio3" src="https://ia802807.us.archive.org/26/items/nirvanasmellsliketeenspirit_202002/Nirvana%20-%20Smells%20Like%20Teen%20Spirit.mp3"></audio>
+    </body>
+
+    <script>
+            function playAudio(audioID) {
+                const audio = document.getElementById(audioID);
+                audio.play();
+            }
+
+            function pauseAudio(audioID) {
+                const audio = document.getElementById(audioID);
+                audio.pause();
+                audio.currentTime = 0; // Reiniciar el audio al hacer clic fuera de la imagen
+            }
+    </script>
+    </style>
+    
+</html>

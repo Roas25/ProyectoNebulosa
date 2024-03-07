@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url("https://images.ecestaticos.com/MUsrmUgYGUwR5M6ZyyHCDmeFRUk=/0x0:2121x1414/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd9e%2F66d%2F793%2Fd9e66d793adbc994841e60850a17e61c.jpg");
+        }
+        .primo{
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            background-color: bisque;
+            width: fit-content;
+        }
+        li a{
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #555;
+            color: white
+        }
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        #para1 {
+            text-align: center;
+            color: yellow;
+        }
+
+        .center{
+            color: red;
+            text-align: center;
+        }
+
+        .link:link{
+            color: red;
+        }
+
+        .link:visited{
+            color: blue;
+        }
+        .link:hover{
+            color: yellow;
+        }
+        .link:active{
+            color: black;
+        }
+        .imagenes{
+            display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                border: 5px solid red;
+                 border-radius: 10px;
+                 overflow: hidden;
+                 margin-left: 100px;
+                 margin-right: 100px;
+             background-color: rgb(199, 199, 199);
+        }
+    </style>
+</head>
+<body>
+    
+    
+       <div class="primo"> <ul>
+            <li><a href="formulario1.html"> formulario</a></li>
+            <li><a href="Presentacion Jorge Perez HTML 3.html"> Mi tabla</a></li>
+            <li><a href="pagina2.html"> Mis jugadas LoL</a></li>
+        </ul></div>
+        <a class="link" href="formulaio.html">link directo</a >
+        <p>
+            Bienvenido a mi página web
+        </p>
+        <p id="para1">
+            prueba y pincha donde quieras que esto funciona 
+        </p>
+        <h1 class="center">
+            Dale zelda dale
+        </h1>
+        <div class="imagenes">
+        <img id="img1" onmouseover="playAudio('audio1')" onmouseleave="pauseAudio('audio1')" src="https://www.diariodeespana.es/wp-content/uploads/2022/05/Kratos.jpg" >
+        
+     </div>
+     <audio id="audio1" src="https://vgmsite.com/soundtracks/god-of-war-playstation-soundtrack/atftvvtylc/01.%20God%20of%20War.mp3"></audio>
+     <script>
+        function playAudio(audioID) {
+            const audio = document.getElementById(audioID);
+            audio.play();
+        }
+
+        function pauseAudio(audioID) {
+            const audio = document.getElementById(audioID);
+            audio.pause();
+            audio.currentTime = 0; // Reiniciar el audio al hacer clic fuera de la imagen
+        }
+</script>
+</body>
+</html>

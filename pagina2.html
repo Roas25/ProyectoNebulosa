@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://images7.alphacoders.com/536/536426.png");
+            margin: 0; 
+            display: flex; 
+            min-height: 100vh; 
+        }
+
+        .indice {
+            width: 200px; 
+            background-color: #f1f1f1;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        .content {
+            flex: 1; 
+            padding: 20px; 
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="indice">
+        <ul>
+            <li><a href="formulario1.html">formulario</a></li>
+            <li><a href="Presentacion Jorge Perez HTML 3.html">Mi tabla</a></li>
+            <li><a href="index.html">indice</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="video">
+            <iframe width="720" height="450" src="https://www.youtube.com/embed/Jn8W7OA3BOg?si=RPSBZxMz5j_UDSYC"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

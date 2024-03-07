@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .primo{
+            display: inline;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            background-color: bisque;
+            width: fit-content;
+        }
+        li a{
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #555;
+            color: white
+        }
+        
+        
+        .form {
+            margin-top: 100px;
+            
+            display: flex; /* Usa flexbox para centrar verticalmente */
+            flex-direction: column; /* Alinea los elementos verticalmente */
+            align-items: center; /* Centra verticalmente */
+            padding: 0.5%;
+            width: fit-content;
+            background-image: url("https://img.freepik.com/foto-gratis/textura-tablas-madera_1249-169.jpg");
+            border: red solid 4px;
+            margin-left: 750px;
+        }
+        .form input{
+            display: list-item;
+            margin: 0.5%;
+            border: solid rgb(247, 210, 210);
+            width: fit-content;           
+            }
+        .radio{
+            display: flex;
+            border: 3px solid red;
+            width: fit-content;
+            padding: 5px;
+            background-color: rgb(163, 154, 154);
+        }
+    </style>
+
+    <div class="primo"> <ul>
+    <li><a href="index.html"> indice</a></li>
+    <li><a href="Presentacion Jorge Perez HTML 3.html"> Mi tabla</a></li>
+    <li><a href="pagina2.html"> Mis jugadas LoL</a></li>
+    </ul></div>
+
+    <div class="form"> 
+        <form action="mailto:jorgeperezpul@gmail.com" method="post" enctype="text/plain">
+        nombre
+        <input name="nombre" type="text" value="Perico de los Palotes">
+        fecha
+        <input name="fecha" type="date">
+        correo electronico
+        <input name="corre electronico" type="email" value="123@gmail.com">
+        animal favorito
+        <div class="radio"> <input type="radio" name="animal" value="perro">perro
+        <input type="radio" name="animal" value="gato">gato
+        <input type="radio" name="animal" value="loro">loro
+        </div>
+        Indica tu Comunidad Autónoma
+        <select name="select">
+            <option value="value1">Extremadura</option>
+            <option value="value2">Andalucía</option>
+            <option value="value3">Cantabria</option>
+            <option value="value3">Asturias</option>
+            <option value="value3">Cataluña</option>
+        </select>
+        <fieldset>
+            <legend>Dirección</legend>
+            Código postal: <input name='Código postal' type='text' tabindex='1'>
+            Calle/Avenida/Nº: <input name='Calle/Avenida/Nº' type='text' tabindex='2'>
+        </fieldset>
+        <input type="submit">
+        <textarea name="textarea" rows="10" cols="50">Escribe algo aqui</textarea>
+    </form>
+    </div>
+</body>
+</html>
